@@ -5819,162 +5819,6 @@
          ]
       },
       {
-         "tag":"enchanted_stardust",
-         "patterns":[
-            "Discovering enchanted stardust",
-            "Cosmic particles with magical properties",
-            "Wishes granted by stardust"
-         ],
-         "responses":[
-            "Enchanted stardust is a mythical substance that is said to originate from the cosmos and hold magical properties.",
-            "Stardust is a poetic term that refers to cosmic particles that form stars and planets."
-         ]
-      },
-      {
-         "tag":"fantastical_architecture",
-         "patterns":[
-            "Marveling at fantastical architecture",
-            "Buildings that defy gravity and logic",
-            "Designing dreamlike structures"
-         ],
-         "responses":[
-            "Fantastical architecture is an artistic expression that pushes the boundaries of imagination, creating whimsical and surreal buildings.",
-            "Architects and designers explore innovative ideas to shape the future of urban living."
-         ]
-      },
-      {
-         "tag":"enchanted_breeze",
-         "patterns":[
-            "Feeling the touch of an enchanted breeze",
-            "The magic of gentle winds",
-            "Whispers of mystical winds"
-         ],
-         "responses":[
-            "An enchanted breeze is a mythical concept where gentle winds carry magic and blessings.",
-            "The wind is a natural atmospheric phenomenon that influences weather patterns and is essential for the environment."
-         ]
-      },
-      {
-         "tag":"dragon_tamer",
-         "patterns":[
-            "Becoming a dragon tamer",
-            "The art of befriending dragons",
-            "Forming bonds with mythical beasts"
-         ],
-         "responses":[
-            "Dragon tamers are legendary figures who form unique connections with dragons and earn their trust.",
-            "Dragons symbolize power and wisdom in various cultures and mythologies."
-         ]
-      },
-      {
-         "tag":"enchanted_fruits",
-         "patterns":[
-            "Discovering enchanted fruits",
-            "Fruits with mystical flavors and effects",
-            "The magical properties of rare fruits"
-         ],
-         "responses":[
-            "Enchanted fruits are mythical creations that possess extraordinary flavors or grant fantastical abilities.",
-            "In reality, fruits are nutritious and delicious natural foods that offer a wide range of health benefits."
-         ]
-      },
-      {
-         "tag":"magical_mistakes",
-         "patterns":[
-            "Learning from magical mistakes",
-            "Lessons in wizardry gone awry",
-            "The humor and consequences of misfiring spells"
-         ],
-         "responses":[
-            "Magical mistakes are comedic elements in fantasy stories where spells and enchantments don't go as planned.",
-            "In real life, making mistakes is a part of learning and growing."
-         ]
-      },
-      {
-         "tag":"enchanted_rain",
-         "patterns":[
-            "Experiencing enchanted rain",
-            "Rainfall that brings good fortune",
-            "Dancing in the rain with magical properties"
-         ],
-         "responses":[
-            "Enchanted rain is a fantastical concept where raindrops hold magical qualities, such as granting blessings or wishes.",
-            "Rain is a natural weather phenomenon and an essential part of the water cycle."
-         ]
-      },
-      {
-         "tag":"timeless_tales",
-         "patterns":[
-            "Sharing timeless tales",
-            "Storytelling that spans generations",
-            "The magic of passing down stories"
-         ],
-         "responses":[
-            "Timeless tales are enduring narratives that transcend time and continue to captivate audiences across generations.",
-            "Storytelling is a powerful form of communication and cultural preservation."
-         ]
-      },
-      {
-         "tag":"enchanted_well",
-         "patterns":[
-            "Encountering an enchanted well",
-            "Wishes granted by magical waters",
-            "Seeking wisdom from the depths"
-         ],
-         "responses":[
-            "An enchanted well is a mythical source of water that grants wishes or possesses healing properties.",
-            "Wells have historical significance as vital sources of water for communities."
-         ]
-      },
-      {
-         "tag":"dimensional_doorway",
-         "patterns":[
-            "Opening a dimensional doorway",
-            "Portals to parallel worlds",
-            "Exploring alternate realities"
-         ],
-         "responses":[
-            "A dimensional doorway is an imaginative concept that allows passage between different dimensions and realities.",
-            "The idea of parallel universes and multiple dimensions is a popular theme in science fiction and theoretical physics."
-         ]
-      },
-      {
-         "tag":"enchanted_snow",
-         "patterns":[
-            "Witnessing enchanted snowfall",
-            "The magic of snow in mythical realms",
-            "The secrets of eternal snow"
-         ],
-         "responses":[
-            "Enchanted snow is a mythical phenomenon where snowflakes possess magical properties or create enchanting winter landscapes.",
-            "Snow is a meteorological event where frozen water crystals fall from the sky in colder climates."
-         ]
-      },
-      {
-         "tag":"spellbinding_cuisine",
-         "patterns":[
-            "Savoring spellbinding cuisine",
-            "Food that delights the senses and soul",
-            "Recipes from ancient spellbooks"
-         ],
-         "responses":[
-            "Spellbinding cuisine is an imaginative concept where food is prepared with magical ingredients and flavors.",
-            "Cooking and culinary arts offer diverse tastes and cultural experiences."
-         ]
-      },
-      {
-         "tag":"enchanted_lullabies",
-         "patterns":[
-            "Listening to enchanted lullabies",
-            "Songs that soothe and enchant",
-            "The magic of bedtime melodies"
-         ],
-         "responses":[
-            "Enchanted lullabies are mythical songs that have a soothing and magical effect, lulling listeners into a peaceful slumber.",
-            "Lullabies are cherished melodies that parents sing to their children to comfort and calm them."
-         ]
-      },
-      {
          "tag":"find the Computer Networking Department",
          "patterns":[
             "How can a student find the Computer Networking Department at PSG Polytechnic College?",
@@ -6038,6 +5882,69 @@
          "responses":[
             "The department covers various subjects   including Computer Hardware, computer networking and wireless networks"
          ]
-      }
+      },
+      {
+         "tag": "general",
+         "patterns": [
+           "How many departments are there in PSG Polytechnic College?",
+           "What are the names of all the departments in PSG Polytechnic College?"
+         ],
+         "responses": [
+           "There are 10+ departments in PSG Polytechnic College, including Mechanical, Civil, Electrical, Computer Networking, and more.",
+           "PSG Polytechnic College has departments such as Mechanical, Civil, Electrical, Electronics, Computer Networking, Information Technology, Mechatronics, Textile Technology, Printing Technology, and Basic Science."
+         ]
+       },
+       {
+         "tag": "mechanical",
+         "patterns": [
+           "What subjects are taught in the Mechanical Engineering department?",
+           "What are the key labs in the Mechanical department?",
+           "Which companies hire students from the Mechanical department?"
+         ],
+         "responses": [
+           "Mechanical Engineering covers subjects like Engineering Mechanics, Thermodynamics, Machine Design, Fluid Mechanics, and CAD.",
+           "Key labs include the CAD/CAM Lab, Thermal Engineering Lab, CNC Machine Lab, and Strength of Materials Lab.",
+           "Top recruiters for Mechanical students include Ashok Leyland, Tata Motors, TVS Motors, L&T, and BHEL."
+         ]
+       },
+       {
+         "tag": "civil",
+         "patterns": [
+           "What subjects are covered in the Civil Engineering department?",
+           "What are the lab facilities available for Civil Engineering students?",
+           "Are AutoCAD and Revit part of the Civil Engineering curriculum?"
+         ],
+         "responses": [
+           "Civil Engineering subjects include Structural Engineering, Surveying, Geotechnical Engineering, Transportation Engineering, and Construction Management.",
+           "Lab facilities include the Concrete Technology Lab, Soil Mechanics Lab, and Transportation Engineering Lab.",
+           "Yes, AutoCAD and Revit are included for design and planning training in Civil Engineering."
+         ]
+       },
+       {
+         "tag": "electrical",
+         "patterns": [
+           "What are the core subjects in Electrical and Electronics Engineering?",
+           "What are the career opportunities for Electrical students?",
+           "Which companies hire Electrical Engineering students?"
+         ],
+         "responses": [
+           "Core subjects include Circuit Theory, Electrical Machines, Power Systems, Microcontrollers, and Power Electronics.",
+           "Career opportunities include jobs in power plants, renewable energy, automation industries, and electronics manufacturing.",
+           "Top companies hiring Electrical students include Siemens, Schneider Electric, TNEB, ABB, and L&T."
+         ]
+       },
+       {
+         "tag": "computer_networking",
+         "patterns": [
+           "What subjects are covered in the Computer Networking department?",
+           "Does PSG Polytechnic provide CCNA certification training?",
+           "Which companies hire IT students from PSG Polytechnic College?"
+         ],
+         "responses": [
+           "Computer Networking covers subjects like Network Security, Cloud Computing, Routing & Switching, and Cybersecurity.",
+           "Yes, PSG Polytechnic College offers CCNA certification training for students.",
+           "Top recruiters for IT students include Infosys, Wipro, Cognizant, HCL, and TCS."]
+         }
+   
    ]
 }
