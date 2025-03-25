@@ -5735,30 +5735,6 @@
          ]
       },
       {
-         "tag":"timeless_wanderer",
-         "patterns":[
-            "The adventures of a timeless wanderer",
-            "Roaming through eras and dimensions",
-            "The wisdom of an eternal traveler"
-         ],
-         "responses":[
-            "A timeless wanderer is a mythical figure, often depicted as an immortal or time-traveling being who observes the ebb and flow of history.",
-            "Travelers in reality explore the world, experiencing diverse cultures and creating lasting memories."
-         ]
-      },
-      {
-         "tag":"enchanted_mirror_maze",
-         "patterns":[
-            "Getting lost in an enchanted mirror maze",
-            "Reflections and illusions in the maze",
-            "The challenge of finding the way out"
-         ],
-         "responses":[
-            "An enchanted mirror maze is a bewitching labyrinth filled with reflections and optical illusions.",
-            "Real-world mirror mazes are popular attractions that offer fun and disorienting experiences."
-         ]
-      },
-      {
          "tag":"astral_artistry",
          "patterns":[
             "Exploring astral artistry",
@@ -5783,27 +5759,21 @@
          ]
       },
       {
-         "tag":"timeless_ballroom",
+         "tag":"owner",
          "patterns":[
-            "Dancing in a timeless ballroom",
-            "Elegant waltzes through the ages",
-            "Time-traveling masquerade balls"
-         ],
+            "Who is the owner of the psg polytechnic college",
+            "Who is the owner of the psg polytechnic college"],
+            
          "responses":[
-            "A timeless ballroom is a mythical setting where dance transcends time, and participants waltz through different historical eras.",
-            "Ballroom dancing is a graceful and expressive form of dance that has evolved over centuries."
+            "PSG Polytechnic College, established in 1939, is managed by PSG & Sons' Charities, a trust founded by the PSG family. The current Managing Trustee of PSG & Sons' Charities is Shri. L. Gopalakrishnan. "
          ]
       },
       {
-         "tag":"enchanted_fog",
+         "tag":"principle",
          "patterns":[
-            "Encountering enchanted fog",
-            "The mysteries within mystical mists",
-            "Foggy journeys through magical lands"
-         ],
+            "who is the principle of psg polytechnic college","who is the principle of psg polytechnic college"],
          "responses":[
-            "Enchanted fog is a magical phenomenon that cloaks landscapes in mystery and wonder.",
-            "Fog is a natural meteorological condition caused by the condensation of water vapor in the air."
+            "Dr B Giriraj Balasubramaniyam has been serving as the Principal of PSG Polytechnic College since 2014. He holds a Ph.D. from Anna University, Chennai, awarded in 2008, and has been associated with the Department of Mechanical Engineering at PSG Polytechnic College since 1997. Under his leadership, the college has continued its tradition of excellence in technical education"
          ]
       },
       {
@@ -5859,8 +5829,8 @@
             "When was PSG Polytechnic College established?"
          ],
          "responses":[
-            "PSG Polytechnic College, established in 1939, is a premier institution in technical education and research, located in Peelamedu, Coimbatore, Tamil Nadu.  The acronym ‘PSG’ stands for ‘Peelamedu Samanaidu Govindasamy,’ honoring the founder’s father"
-         ]
+            "PSG Polytechnic College, established in 1939, is a premier institution in technical education and research, located in Peelamedu, Coimbatore, Tamil Nadu.  The acronym ‘PSG’ stands for ‘Peelamedu Samanaidu Govindasamy,’ honoring the founder’s father"]
+         
       },
       {
          "tag":"PSG Polytechnic College located",
@@ -5881,70 +5851,16 @@
          ],
          "responses":[
             "The department covers various subjects   including Computer Hardware, computer networking and wireless networks"
-         ]
-      },
-      {
-         "tag": "general",
-         "patterns": [
-           "How many departments are there in PSG Polytechnic College?",
-           "What are the names of all the departments in PSG Polytechnic College?"
-         ],
-         "responses": [
-           "There are 10+ departments in PSG Polytechnic College, including Mechanical, Civil, Electrical, Computer Networking, and more.",
-           "PSG Polytechnic College has departments such as Mechanical, Civil, Electrical, Electronics, Computer Networking, Information Technology, Mechatronics, Textile Technology, Printing Technology, and Basic Science."
-         ]
-       },
-       {
-         "tag": "mechanical",
-         "patterns": [
-           "What subjects are taught in the Mechanical Engineering department?",
-           "What are the key labs in the Mechanical department?",
-           "Which companies hire students from the Mechanical department?"
-         ],
-         "responses": [
-           "Mechanical Engineering covers subjects like Engineering Mechanics, Thermodynamics, Machine Design, Fluid Mechanics, and CAD.",
-           "Key labs include the CAD/CAM Lab, Thermal Engineering Lab, CNC Machine Lab, and Strength of Materials Lab.",
-           "Top recruiters for Mechanical students include Ashok Leyland, Tata Motors, TVS Motors, L&T, and BHEL."
-         ]
-       },
-       {
-         "tag": "civil",
-         "patterns": [
-           "What subjects are covered in the Civil Engineering department?",
-           "What are the lab facilities available for Civil Engineering students?",
-           "Are AutoCAD and Revit part of the Civil Engineering curriculum?"
-         ],
-         "responses": [
-           "Civil Engineering subjects include Structural Engineering, Surveying, Geotechnical Engineering, Transportation Engineering, and Construction Management.",
-           "Lab facilities include the Concrete Technology Lab, Soil Mechanics Lab, and Transportation Engineering Lab.",
-           "Yes, AutoCAD and Revit are included for design and planning training in Civil Engineering."
-         ]
-       },
-       {
-         "tag": "electrical",
-         "patterns": [
-           "What are the core subjects in Electrical and Electronics Engineering?",
-           "What are the career opportunities for Electrical students?",
-           "Which companies hire Electrical Engineering students?"
-         ],
-         "responses": [
-           "Core subjects include Circuit Theory, Electrical Machines, Power Systems, Microcontrollers, and Power Electronics.",
-           "Career opportunities include jobs in power plants, renewable energy, automation industries, and electronics manufacturing.",
-           "Top companies hiring Electrical students include Siemens, Schneider Electric, TNEB, ABB, and L&T."
-         ]
-       },
-       {
-         "tag": "computer_networking",
-         "patterns": [
-           "What subjects are covered in the Computer Networking department?",
-           "Does PSG Polytechnic provide CCNA certification training?",
-           "Which companies hire IT students from PSG Polytechnic College?"
-         ],
-         "responses": [
-           "Computer Networking covers subjects like Network Security, Cloud Computing, Routing & Switching, and Cybersecurity.",
-           "Yes, PSG Polytechnic College offers CCNA certification training for students.",
-           "Top recruiters for IT students include Infosys, Wipro, Cognizant, HCL, and TCS."]
-         }
+         ] 
+      }
+      
+      
    
    ]
 }
+
+ 
+      
+      
+          
+       
