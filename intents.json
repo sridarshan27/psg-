@@ -5759,6 +5759,19 @@
          ]
       },
       {
+         "tag": "department psg",
+         "patterns": [
+              "What are the names of all the departments in PSG Polytechnic College?",
+              "How many departments are there in PSG Polytechnic College?",
+              "How many departments are there in PSG Polytechnic College?"
+         ],
+         "responses": [
+           "There are 10+ departments in PSG Polytechnic College, including Mechanical, Civil, Electrical, Computer Networking, and more.",
+           "PSG Polytechnic College has departments such as Mechanical, Civil, Electrical, Electronics, Computer Networking, Information Technology, Mechatronics, Textile Technology, Printing Technology, and Basic Science."
+         ]
+       },
+   
+      {
          "tag":"owner",
          "patterns":[
             "Who is the owner of the psg polytechnic college",
