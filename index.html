@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block title %}Welcome - AI Assistant{% endblock %}
+
+{% block content %}
+<div class="text-center">
+    <h1 class="display-4 mb-4">Welcome to AI Assistant</h1>
+    <p class="lead">Your intelligent conversation partner powered by advanced AI technology.</p>
+    
+    <div class="row mt-5">
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <i class="fas fa-robot fa-3x mb-3 text-primary"></i>
+                    <h5 class="card-title">Smart Conversations</h5>
+                    <p class="card-text">Engage in natural conversations with our advanced AI model.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <i class="fas fa-brain fa-3x mb-3 text-primary"></i>
+                    <h5 class="card-title">Learning & Analysis</h5>
+                    <p class="card-text">Get insights and analysis on various topics and data.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <i class="fas fa-chart-line fa-3x mb-3 text-primary"></i>
+                    <h5 class="card-title">Data Visualization</h5>
+                    <p class="card-text">Visualize data and get meaningful insights.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-4">
+        {% if not current_user.is_authenticated %}
+            <a href="{{ url_for('login') }}" class="btn btn-primary btn-lg me-3">Login</a>
+            <a href="{{ url_for('signup') }}" class="btn btn-outline-primary btn-lg">Sign Up</a>
+        {% else %}
+            <a href="{{ url_for('chat') }}" class="btn btn-primary btn-lg">Start Chatting</a>
+        {% endif %}
+    </div>
+</div>
+{% endblock %} 

@@ -1,0 +1,165 @@
+{% extends "base.html" %}
+
+{% block title %}Chat - AI Assistant{% endblock %}
+
+{% block extra_css %}
+<style>
+    .conversation-list {
+        height: calc(100vh - 200px);
+        overflow-y: auto;
+    }
+    .conversation-item {
+        cursor: pointer;
+        padding: 10px;
+        border-bottom: 1px solid #dee2e6;
+    }
+    .conversation-item:hover {
+        background-color: #f8f9fa;
+    }
+    .conversation-item.active {
+        background-color: #e9ecef;
+    }
+    #chat-messages {
+        height: calc(100vh - 300px);
+        overflow-y: auto;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="row">
+    <!-- Conversations Sidebar -->
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <h5 class="mb-0">Conversations</h5>
+                <button class="btn btn-sm btn-primary" id="new-chat">New Chat</button>
+            </div>
+            <div class="conversation-list">
+                {% for conversation in conversations %}
+                <div class="conversation-item" data-id="{{ conversation.id }}">
+                    <div class="d-flex justify-content-between">
+                        <span>{{ conversation.title }}</span>
+                        <small class="text-muted">{{ conversation.created_at.strftime('%Y-%m-%d') }}</small>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <!-- Chat Area -->
+    <div class="col-md-9">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">Chat with AI Assistant</h5>
+            </div>
+            <div class="card-body">
+                <div id="chat-messages" class="mb-3">
+                    <!-- Messages will be added here dynamically -->
+                </div>
+                <form id="chat-form" class="mt-3">
+                    <div class="input-group">
+                        <input type="text" id="message-input" class="form-control" placeholder="Type your message here...">
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+let currentConversationId = null;
+
+function formatMessage(content) {
+    // Handle code blocks
+    if (content.includes('```')) {
+        const parts = content.split('```');
+        let formattedContent = '';
+        for (let i = 0; i < parts.length; i++) {
+            if (i % 2 === 0) {
+                formattedContent += parts[i];
+            } else {
+                const [language, code] = parts[i].split('\n', 1);
+                formattedContent += `<pre class="code-block">${parts[i].substring(language.length + 1)}</pre>`;
+            }
+        }
+        return formattedContent;
+    }
+    return content;
+}
+
+function addMessage(role, content) {
+    const messageDiv = document.createElement('div');
+    messageDiv.className = `message ${role}-message`;
+    messageDiv.innerHTML = formatMessage(content);
+    document.getElementById('chat-messages').appendChild(messageDiv);
+    messageDiv.scrollIntoView({ behavior: 'smooth' });
+}
+
+document.getElementById('chat-form').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const input = document.getElementById('message-input');
+    const message = input.value.trim();
+    if (!message) return;
+
+    // Add user message to chat
+    addMessage('user', message);
+    input.value = '';
+
+    try {
+        const response = await fetch('/api/chat', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                message: message,
+                conversation_id: currentConversationId
+            })
+        });
+
+        const data = await response.json();
+        currentConversationId = data.conversation_id;
+        addMessage('assistant', data.response);
+    } catch (error) {
+        console.error('Error:', error);
+        addMessage('assistant', 'Sorry, there was an error processing your request.');
+    }
+});
+
+document.getElementById('new-chat').addEventListener('click', () => {
+    currentConversationId = null;
+    document.getElementById('chat-messages').innerHTML = '';
+});
+
+document.querySelectorAll('.conversation-item').forEach(item => {
+    item.addEventListener('click', async () => {
+        const conversationId = item.dataset.id;
+        currentConversationId = conversationId;
+        
+        // Remove active class from all items
+        document.querySelectorAll('.conversation-item').forEach(i => i.classList.remove('active'));
+        // Add active class to clicked item
+        item.classList.add('active');
+
+        // Clear current messages
+        document.getElementById('chat-messages').innerHTML = '';
+
+        try {
+            const response = await fetch(`/api/conversation/${conversationId}`);
+            const data = await response.json();
+            data.messages.forEach(msg => {
+                addMessage(msg.role, msg.content);
+            });
+        } catch (error) {
+            console.error('Error:', error);
+            addMessage('assistant', 'Sorry, there was an error loading the conversation.');
+        }
+    });
+});
+</script>
+{% endblock %} 
